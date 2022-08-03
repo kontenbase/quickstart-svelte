@@ -1,8 +1,9 @@
 <script>
-  import svelteLogo from './assets/svelte.svg';
-  import Counter from './lib/Counter.svelte';
+  import { Router, Route } from 'svelte-routing';
+  import Home from './home.svelte';
+  export let url = '';
 </script>
 
-<main>
-  <p>Intial relase</p>
-</main>
+<Router {url}>
+  <Route path="/" component={Home} />
+</Router>
