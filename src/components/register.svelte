@@ -1,6 +1,6 @@
 <script>
   import { navigate } from 'svelte-routing';
-  import { kontenbase } from '../lib/kontenbaseClient';
+  import { kontenbase } from '../lib/kontenbase';
 
   let firstName;
   let lastName;
@@ -31,6 +31,7 @@
       alert(ErrorProfile.message);
       return;
     }
+
     navigate('/profile');
   };
 </script>

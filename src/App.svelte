@@ -3,6 +3,7 @@
   import Home from './home.svelte';
   import EditProfile from './edit-profile.svelte';
   import Profile from './profile.svelte';
+
   export let url = '';
 </script>
 

@@ -1,7 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { Link, navigate } from 'svelte-routing';
-  import { kontenbase } from './lib/kontenbaseClient';
+  import { kontenbase } from './lib/kontenbase';
 
   let firstName;
   let lastName;

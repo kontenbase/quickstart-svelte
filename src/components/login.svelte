@@ -1,6 +1,6 @@
 <script>
   import { navigate } from 'svelte-routing';
-  import { kontenbase } from '../lib/kontenbaseClient';
+  import { kontenbase } from '../lib/kontenbase';
 
   let username;
   let password;
@@ -23,7 +23,6 @@
 </script>
 
 <form on:submit|preventDefault={handleLogin}>
-  <input type="hidden" name="operation" value="login" />
   <div class="form-group">
     <label for="username">Username</label>
     <input
